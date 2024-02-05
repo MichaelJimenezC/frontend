@@ -1,0 +1,42 @@
+.fomularioGeneral{
+  //position: absolute;
+  top: 10%;
+  left: 23%;
+  border: 2px solid white;
+  font-size: 32px;
+  color: dimgray;
+  width: 60%;
+  height: 1000%;
+  border-radius: 33px;
+}
+.datos{
+  margin-left: 50px;
+    margin-top: 10px;
+}
+
+.label{
+  font-weight: bold;
+  color: white;
+}
+
+.campoRequerido{
+  font-weight: bold;
+  color: white;
+  font-size: 32px;
+  font-size: 32px;
+}
+
+.informacion{
+  position: absolute;
+  font-size: 20px;
+  left: 1100px;
+  color: #fff;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  top: 25%;
+  border-radius: 1 rem;
+  transition: width 0.75s aese;
+  background-color: black;
+  border: 1px solid black;
+
+}

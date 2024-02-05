@@ -1,0 +1,78 @@
+/*body{
+    background: linear-gradient(#53e4fb, #bff4fc, #edfcfc, #7cecfb, #d7fbfc, #a7f3fc, #98eefc, #3adefb, #6de4fb);
+}*/
+h1{
+  color: white;
+  text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+  text-align: center;
+  font-size: 60px;
+  position: absolute;
+  left: 200px;
+}
+
+div.galeria{
+  margin: 10px 20px;
+  box-shadow: 0 4px 8px lightskyblue, 0 6px 20px 0 rgb(0, 0,0);
+  float: left;
+  width: 350px;
+}
+
+div.galeria img{
+  width: 350px;
+  height: 300px;
+  align-items: center;
+
+}
+
+/*div.galeria:hover{
+  border: 1px solid lightcoral;
+  transform: rotate(-3deg);
+
+}
+*/
+
+div.pie{
+  text-align: center;
+  text-shadow: 2px 2px 5px purple;
+  padding: 10px;
+}
+.enlaces1{
+  color: #ff62b4;
+  font-size: 30px;
+  position: absolute;
+  top: 168px;
+  left: 1%;
+}
+
+.enlaces2{
+  color: #ff62b4;
+  font-size: 30px;
+  position: absolute;
+  top: 220px;
+  left: 1%;
+}
+
+form{
+align-items: center;
+top:left;
+}
+
+.coneinerFotos{
+  overflow-y: scroll;
+  height: 572px;
+  width: 1187px;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+ion-searchbar.busqueda{
+  color: white;
+  width: 42%;
+  height: 15%;
+  font-size: small;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-left: 29%;
+  margin-top: 9%;
+ }

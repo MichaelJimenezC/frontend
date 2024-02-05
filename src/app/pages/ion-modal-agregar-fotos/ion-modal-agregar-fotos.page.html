@@ -1,0 +1,34 @@
+<div class = "fomularioGeneral">
+  <form [formGroup] = "agregar" (ngSubmit)="send()" class="datos">
+    <ion-label for = "text" class="label"> Nombre Científico</ion-label>
+      <ion-input type="text" class="nombreCientifico" placeholder="Ingresa el nombre científico" id = "nombreCientifico" formControlName = "nombreCientifico"></ion-input>
+    <ion-label for = "text" class="label"> Nombre Coloquial</ion-label>
+      <ion-input type="text" class="nombreColoquial" placeholder="Ingresa el nombre coloquial" id="nombreColoquial" formControlName = "nombreColoquial"></ion-input>
+    <ion-label for = "text" class="label">Autor o Autora</ion-label>
+      <ion-input type="text" class="Autor" placeholder="Ingresa el nombre del Aut@r de la imagen" id="Autor" formControlName = "Autor"></ion-input>
+      <ion-list class = "estatusAgente">
+        <ion-item>
+          <p class = "campoRequerido">A que campo pertenece:</p>
+          <ion-select class = "campoRequerido"  formControlName="campoRequerido">
+            <ion-select-option value="activo">Flora</ion-select-option>
+            <ion-select-option value="descanso">Fauna</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    <ion-label class="label"> Seleccione su imagen</ion-label>
+      <input type="file" (change)="onFileSelected($event)" id="Imagen" formControlName="Imagen"/>
+      <ion-button type="submit" [disabled]= "agregar.invalid"> Enviar</ion-button>
+</form>
+</div>
+
+<div class="informacion">
+  <p routerLink="/fauna">
+    <!--texto que verá el usuario-->
+    FAUNA
+  </p>
+  <!--link para enviar un email-->
+  <p routerLink="/flora">FLORA</p>
+
+  <p routerLink = "/home"> INICIO </p>
+</div>
+

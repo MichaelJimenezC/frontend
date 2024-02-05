@@ -1,0 +1,7 @@
+{
+  "name": "PaginaWebUam",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

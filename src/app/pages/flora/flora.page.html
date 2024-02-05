@@ -1,0 +1,52 @@
+<!--
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>flora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">flora</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+-->
+
+<head>
+    <title> FLORA </title>
+</head>
+<br>
+<h1> Flora Observada en la Uam Lerma</h1>
+
+<ion-searchbar placeholder="Buscar nombre de la especie o aut@r" class="busqueda" (ionChange)="buscar($event)"
+    [debounce]="100"></ion-searchbar>
+
+<div class="coneinerFotos">
+    <div *ngIf="datosFiltrados.length === 0" class="ion-text-center">
+        <p>No hay datos disponibles.</p>
+    </div>
+    <div *ngFor="let dato of datosFiltrados" class="galeria">
+        <div class="foto">
+            <img [src]="getImagePath(dato.imagen)" alt="">
+        </div>
+        <div class="pie">
+            <p><i>{{ dato.nombreCientifico }}</i></p>
+            <p>{{ dato.nombreColoquial }}</p>
+            <p>Fotografía: {{ dato.autor }}</p>
+        </div>
+    </div>
+</div>
+<div>
+    <!--nos regresa a nuestra página de inicio-->
+    <P class="enlaces1" routerLink="/home"> INICIO</P>
+    <p class="enlaces2" routerLink="/fauna"> FAUNA </p>
+</div>
+
+<!--
+  <form action="" method="post">
+      <input type="file" name="file" id="file">
+      <div id="preview" class="styleImage"></div>
+  </form>
+-->

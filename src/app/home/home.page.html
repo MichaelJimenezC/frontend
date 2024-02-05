@@ -1,0 +1,71 @@
+<!--
+<ion-content>
+  <div class="card-container">
+    <ion-card>
+      <ion-row>
+        <ion-col size-md="3" size="12" class="ion-padding ion-blue-bkg">
+          <img
+            src="https://images.prismic.io/ionicframeworkcom/ac68e1d9-9887-4e5a-9820-9290d06638de_ionic+logo+white+on+blue.png"
+            alt="Ionic logo"
+            loading="lazy"
+          />
+        </ion-col>
+        <ion-col size-md="9" size="12" class="welcome">
+          <ion-card-header>
+            <ion-card-title> Welcome to Ionic Secure Solutions Starter </ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-button (click)="login()" shape="round" color="primary"> Sign in </ion-button
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+</ion-content>
+
+-->
+
+<!-- GALERÍA ROTANDO -->
+<body>
+  <div class="recuadro">
+    <span style="--i: 1"
+      ><img src="../../assets/imagenes/logo1.jpg" alt=""
+    /></span>
+    <span style="--i: 2"
+      ><img src="../../assets/imagenes/logo_uam.jpg" alt=""
+    /></span>
+    <span style="--i: 3"
+      ><img src="../../assets/imagenes/uam1.jpeg" alt=""
+    /></span>
+    <span style="--i: 4"
+      ><img src="../../assets/imagenes/uam2.jpeg" alt=""
+    /></span>
+    <span style="--i: 5"
+      ><img src="../../assets/imagenes/uam3.jpeg" alt=""
+    /></span>
+    <span style="--i: 6"
+      ><img src="../../assets/imagenes/uam4.jpeg" alt=""
+    /></span>
+    <span style="--i: 7"
+      ><img src="../../assets/imagenes/uam5.jpeg" alt=""
+    /></span>
+    <span style="--i: 8"
+      ><img src="../../assets/imagenes/uam6.jpeg" alt=""
+    /></span>
+  </div>
+
+  <!--Routing-->
+  <div class="informacion">
+    <p routerLink="/fauna">
+      <!--texto que verá el usuario-->
+      FAUNA
+    </p>
+    <!--link para enviar un email-->
+    <p routerLink="/flora">FLORA</p>
+  </div>
+
+  <!--Apartado para agregar nuevas fotos-->
+  <p class = "pregunta">¿Deseas agregar tu fotografía?</p>
+  <ion-button class = "presiona" color = "dark" routerLink = "/login" >Presiona aqui</ion-button>
+</body>
