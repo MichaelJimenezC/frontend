@@ -45,7 +45,7 @@ export class IonModalAgregarFotosPage implements OnInit {
       const campoRequeridoValue = (this.agregar.value.campoRequerido === 'Flora') ? 1 : 0;
       formData.append('campoRequerido', campoRequeridoValue.toString());
 
-      const backendURL = 'http://localhost:3902/api/crearDato';
+      const backendURL = 'https://backend-production-66c4.up.railway.app/api/crearDato';
 
       this.http.post(backendURL, formData)
         .subscribe((response) => {
